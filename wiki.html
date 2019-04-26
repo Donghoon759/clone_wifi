@@ -28,15 +28,17 @@
     .icon-bar {
       width: 100%;
       background-color: green;
-      overflow: auto;
+      overflow: hidden;
     }
     .icon-bar a {
       float: left;
-      width: 5%;
+      width: 100px;
       text-align: center;
       padding: 10px 10px;
       color: white;
       display: block;
+      height:40px;
+      line-height:40px;
     }
     .icon-bar input {
       float: left;
@@ -104,6 +106,17 @@
       overflow: hidden;
     }
 
+    div > li > a {
+      float: left;
+      width: 20px;
+      text-align: center;
+      padding: 10px 10px;
+      color: white;
+      display: block;
+      height:40px;
+      line-height:40px;
+    }
+
 
 
 
@@ -117,13 +130,13 @@
     <nav class="icon-bar">
       <ul>
         <li><a href="#"><i class="fa fa-wikipedia-w"> 나무위키</i></a></li>
-        <li><a href="#"><i class="fa fa-compass">최근 변경</i></a></li>
-        <li><a href="#"><i class="fa fa-comment">최근 토론</i></a></li>
-        <li><a href="#"><i class="fa fa-cog">특수 기능</i></a></li>
-        <li><a href="#"><i class="fa fa-podcast">라이브</i></a></li>
+        <li><a href="#"><i class="fa fa-compass"> 최근 변경</i></a></li>
+        <li><a href="#"><i class="fa fa-comment"> 최근 토론</i></a></li>
+        <li><a href="#"><i class="fa fa-cog"> 특수 기능</i></a></li>
+        <li><a href="#"><i class="fa fa-podcast"> 라이브</i></a></li>
         <div style="float:right; margin-right:100px; display:block; ">
         <li style="display:inline"><a href="#"><i class="fa fa-random"></i></a></li>
-        <li style="display:inline"><input type="text" name="search_keyword" placeholder="Search"></li>
+        <li style="display:inline"><input type="text" name="search_keyword" placeholder="Search" style="height:60px;"></li>
         <li style="display:inline"><a href="#"><span class="fa-stack fa-lg">
               <i class="fa fa-square-o fa-stack-2x"></i>
               <i class="fa fa-search fa-stack-1x"></i></span></a></li>
